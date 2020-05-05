@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Starter </title>
+    </head>
+    <style>
+    div.main {
+      background-color: blue;
+      padding:20 px;
+      margin:30 px;
+      width:50% px;
+      hight:400 px;
+    }
+    </style>
+
+<body> Hello World!
+  n/this is a new web page.
+
+
+  <div>
+Area one
+  </div>
+
+    </body>
+
+</html>
