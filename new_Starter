@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
    <head>
       <title>Starter </title>
     </head>
+
     <style>
     div.main {
       background-color: blue;
@@ -15,7 +17,6 @@
 
 <body> Hello World!
   n/this is a new web page.
-
 
   <div>
 Area one, testing one !!
