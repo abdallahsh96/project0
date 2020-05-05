@@ -6,10 +6,10 @@
     <style>
     div.main {
       background-color: blue;
-      padding:20 px;
-      margin:30 px;
-      width:50% px;
-      hight:400 px;
+      padding:20px;
+      margin:30px;
+      width:50%;
+      height:400px;
     }
     </style>
 
