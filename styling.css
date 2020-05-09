@@ -2,9 +2,61 @@
   font-family: arial;
   font-size: 24px;
 }
+
 #h001{
   color:white; font-size:50px;
 }
+
+#in_N_main::placeholder{
+  color: black;
+}
+
+#in_P_main::placeholder{
+  color: orange;
+}
+
+#in_N_main  {
+  color:orange;
+  border-width: thick;
+  background-color: darkgreen;
+font-family: fantasy,arial;
+font-size: 16px;
+font-style: italic;
+height: 30px;
+
+}
+
+#in_N_main:focus {
+  color: orange;
+  border-width: thick;
+  background-color: darkgreen;
+font-family: fantasy,arial;
+font-size: 16px;
+height: 30px;
+border-color: blue;
+}
+
+#in_P_main {
+  color: orange;
+  border-width: thick;
+  background-color: darkgreen;
+  font-family: fantasy,arial;
+  font-size: 16px;
+  height: 30px;
+}
+
+#in_P_main:focus {
+  color: orange;
+  border-width: thick;
+  background-color: darkgreen;
+  font-family:fantasy,arial;
+  font-size: 16px;
+  height: 30px;
+  border-color: blue;
+}
+
+
+
  #head001 {
   background-color: #0CDADD;
   padding-top:0.5px;
@@ -26,5 +78,4 @@
   border-color: gray;
   border-style:solid;
   border-width: thick;
-
 }
