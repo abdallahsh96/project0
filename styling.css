@@ -41,7 +41,8 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 10px; }
   @media (max-width: 499px) {
     #next_P {
       margin: 10px; } }
