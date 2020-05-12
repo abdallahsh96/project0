@@ -29,7 +29,8 @@
   border-width: thick; }
   @media (max-width: 499px) {
     #main001 {
-      width: 80%; } }
+      width: 80%;
+      height: auto; } }
 
 #next_P {
   background-color: #4CAF50;
@@ -41,6 +42,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px; }
+  @media (max-width: 499px) {
+    #next_P {
+      margin: 10px; } }
 
 #in_N_main, #in_P_main {
   margin: 30px;
