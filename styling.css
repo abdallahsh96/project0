@@ -2,8 +2,6 @@
   display: flex;
   flex-wrap: wrap; }
 
-/*  @media (min-width: 500px){*/
-/*  ...... (%Regu) stands for Regular appearnce of elements ......*/
 #head001 {
   background-color: #0CDADD;
   padding: 15px 32px;
@@ -11,6 +9,9 @@
   width: 50%;
   height: 30%;
   text-align: center; }
+  @media (max-width: 499px) {
+    #head001 {
+      width: 80%; } }
 
 #p001 {
   font-family: arial;
@@ -26,6 +27,9 @@
   border-color: gray;
   border-style: solid;
   border-width: thick; }
+  @media (max-width: 499px) {
+    #main001 {
+      width: 80%; } }
 
 #next_P {
   background-color: #4CAF50;
