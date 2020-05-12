@@ -4,7 +4,7 @@ display: flex;
 flex-wrap: wrap;
 }
 $FavColor:   #0CDADD;
-  @media (min-width: 500px){
+/*  @media (min-width: 500px){*/
 /*  ...... (%Regu) stands for Regular appearnce of elements ......*/
 %Regu_Head{
   background-color: #0CDADD;
@@ -96,4 +96,4 @@ caption.table_Cap{
     tbody{  font-weight: bold;}
   }
 }
-} /* //// end of @media min-width 500px>>>>>>>>>>>>>>> */
+ /* //// end of @media min-width 500px>>>>>>>>>>>>>>> */
