@@ -1,81 +1,88 @@
-#p001{
-  font-family: arial;
-  font-size: 24px;
-}
+.container {
+  display: flex;
+  flex-wrap: wrap; }
 
-#h001{
-  color:white; font-size:50px;
-}
+@media (min-width: 500px) {
+  /*  ...... (%Regu) stands for Regular appearnce of elements ......*/
+  #head001 {
+    background-color: #0CDADD;
+    padding: 15px 32px;
+    margin: 30px;
+    width: 50%;
+    height: 30%;
+    text-align: center; }
 
-#in_N_main::placeholder{
-  color: black;
-}
+  #p001 {
+    font-family: arial;
+    font-size: 24px; }
 
-#in_P_main::placeholder{
-  color: orange;
-}
+  #main001 {
+    background-color: #0CDADD;
+    padding: 20px;
+    margin: 30px;
+    width: 50%;
+    height: 400px;
+    padding: 15px 32px;
+    border-color: gray;
+    border-style: solid;
+    border-width: thick; }
 
-#in_N_main  {
-  color:orange;
-  border-width: thick;
-  background-color: darkgreen;
-font-family: fantasy,arial;
-font-size: 16px;
-font-style: italic;
-height: 30px;
+  #next_P {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; }
 
-}
+  #in_N_main, #in_P_main {
+    margin: 30px;
+    color: orange;
+    background-color: #555555;
+    /* dark gary */
+    height: 30px;
+    padding: 0px 5px;
+    font-family: arial;
+    font-size: 16px;
+    font-style: normal;
+    border-color: #686868;
+    /* light gray */
+    border-style: solid; }
 
-#in_N_main:focus {
-  color: orange;
-  border-width: thick;
-  background-color: darkgreen;
-font-family: fantasy,arial;
-font-size: 16px;
-height: 30px;
-border-color: blue;
-}
+  /*  ...... IDs are for exact elements through the website 001 to 1000 ......*/
+  #in_N_main :focus {
+    background-color: #696969;
+    border-color: #686868; }
 
-#in_P_main {
-  color: orange;
-  border-width: thick;
-  background-color: darkgreen;
-  font-family: fantasy,arial;
-  font-size: 16px;
-  height: 30px;
-}
+  #in_N_main::placeholder {
+    color: orange; }
 
-#in_P_main:focus {
-  color: orange;
-  border-width: thick;
-  background-color: darkgreen;
-  font-family:fantasy,arial;
-  font-size: 16px;
-  height: 30px;
-  border-color: blue;
-}
+  #in_P_main :focus {
+    background-color: #696969;
+    border-color: #686868; }
 
+  #in_P_main::placeholder {
+    color: orange; }
 
+  caption.table_Cap {
+    margin-left: 10px;
+    /* for all  tables_caption*/ }
 
- #head001 {
-  background-color: #0CDADD;
-  padding-top:0.5px;
-  padding-bottom:15px;
-  margin:30px;
-    margin-left: 30px;
-  width:50%;
-  height:30%;
-  text-align: center;
-}
+  #table_Center {
+    /* table_Center is a <div> */
+    margin: 15px; }
+    #table_Center #tab001 {
+      /* for this exact table*/
+      border-style: solid;
+      border-color: #555555;
+      box-sizing: border-box; }
+      #table_Center #tab001 thead {
+        font-size: 20px; }
+      #table_Center #tab001 tbody {
+        font-weight: bold; } }
+/* //// end of @media min-width >>>>>>>>>>>>>>> */
 
- #main001 {
-  background-color: #0CDADD;
-  padding:20px;
-  margin:30px;
-  width:50%;
-  height:400px;
-  border-radius: 10px;
-  border-color: gray;
-  border-style:solid;
-  border-width: thick;
-}
+/*# sourceMappingURL=styling.css.map */

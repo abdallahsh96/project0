@@ -1,0 +1,99 @@
+
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+$FavColor:   #0CDADD;
+  @media (min-width: 500px){
+/*  ...... (%Regu) stands for Regular appearnce of elements ......*/
+%Regu_Head{
+  background-color: #0CDADD;
+
+  padding: 15px 32px;
+  margin:30px;
+
+  width:50%;
+  height:30%;
+  text-align: center;
+}
+%Regu_text{
+  font-family: arial;
+  font-size: 24px;
+}
+
+%Regu_Textbox{
+  background-color: #0CDADD;
+  padding:20px;
+  margin:30px;
+  width:50%;
+  height:400px;
+padding: 15px 32px;
+  border-color: gray;
+  border-style:solid;
+  border-width: thick;
+}
+
+%Regu_Button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+%input_F {
+
+  margin:30px;
+  color:orange;
+  background-color: #555555; /* dark gary */
+  height: 30px;
+  padding: 0px 5px;
+
+font-family: arial;
+font-size: 16px;
+font-style:normal;
+
+border-color: #686868; /* light gray */
+border-style:solid;
+}
+/*  ...... IDs are for exact elements through the website 001 to 1000 ......*/
+#p001{ @extend %Regu_text;}
+ #main001 {@extend %Regu_Textbox;}
+ #head001 {@extend %Regu_Head;}
+
+#in_N_main  {
+  @extend %input_F;
+  :focus {  background-color: #696969; border-color: #686868; }
+}
+#in_N_main::placeholder{ color: orange;}
+
+#in_P_main{
+  @extend %input_F;
+  :focus {  background-color: #696969; border-color: #686868; }
+}
+#in_P_main::placeholder{ color: orange;}
+
+#next_P  { @extend %Regu_Button;}
+
+caption.table_Cap{
+  margin-left: 10px;
+   /* for all  tables_caption*/
+}
+
+
+#table_Center{
+     /* table_Center is a <div> */
+  margin: 15px;
+  #tab001{
+    /* for this exact table*/
+    thead{font-size: 20px;}
+    border-style: solid;
+    border-color: #555555;
+    box-sizing: border-box;
+    tbody{  font-weight: bold;}
+  }
+}
+} /* //// end of @media min-width >>>>>>>>>>>>>>> */
