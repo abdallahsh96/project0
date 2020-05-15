@@ -2,7 +2,36 @@
   display: flex;
   flex-wrap: wrap; }
 
-.h001 {
+/*body {background-image: url("14092.jpg");} */
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("abs33.png");
+  /*your background image*/
+  background-repeat: repeat;
+  /*we want to have one single image not a repeated one*/
+  background-size: cover;
+  /*sets the img to fullscreen covering the whole screen*/ }
+
+ol {
+  font-size: 20px;
+  background-color: white;
+  /*padding: 12px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 12px; }
+
+/*@media (max-width: 700px) {
+width: 100%;}
+}
+
+
+  /* %%%%%% variables: variables: variables %%%%%%%% */
+ol ul li {
+  font-size: 20px;
+  background-color: white; }
+
+h1.h001 {
   background-color: #0CDADD;
   padding: 15px 32px;
   margin: 30px;
@@ -10,11 +39,11 @@
   height: 30%;
   text-align: center; }
   @media (max-width: 499px) {
-    .h001 {
+    h1.h001 {
       width: 80%; } }
 
 #p001 {
-  font-family: arial;
+  /* font-family: arial; */
   font-size: 24px; }
 
 #main001 {
@@ -27,12 +56,12 @@
   border-color: gray;
   border-style: solid;
   border-width: thick; }
-  @media (max-width: 499px) {
+  @media (max-width: 550px) {
     #main001 {
       width: 80%;
-      height: auto; } }
+      height: inherit; } }
 
-#next_P {
+.next_P {
   background-color: #4CAF50;
   /* Green */
   border: none;
@@ -42,26 +71,50 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 10px; }
+  margin: 3px; }
   @media (max-width: 499px) {
-    #next_P {
+    .next_P {
       margin: 10px; } }
 
+.login {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px; }
+  @media (max-width: 499px) {
+    .login {
+      margin: 10px; } }
+
+#input_F {
+  background-color: #263534;
+  width: 100%;
+  height: 15%; }
+  @media (max-width: 499px) {
+    #input_F {
+      height: 10%; } }
+
 #in_N_main, #in_P_main {
-  margin: 30px;
+  /*margin:30px; */
   color: orange;
   background-color: #555555;
   /* dark gary */
-  height: 30px;
+  height: 20px;
   padding: 0px 5px;
   font-family: arial;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
+  margin: 3px;
   border-color: #686868;
   /* light gray */
   border-style: solid; }
 
-/*  ...... IDs are for exact elements through the website 001 to 1000 ......*/
+/*#IDs are for exact elements through the website 001 to 1000*/
 #in_N_main :focus {
   background-color: #696969;
   border-color: #686868; }
@@ -77,12 +130,14 @@
   color: orange; }
 
 caption.table_Cap {
+  font-style: italic;
   margin-left: 10px;
   /* for all  tables_caption*/ }
 
 #table_Center {
   /* table_Center is a <div> */
-  margin: 15px; }
+  margin: 15px;
+  background-color: white; }
   #table_Center #tab001 {
     /* for this exact table*/
     border-style: solid;
