@@ -65,7 +65,7 @@ border-style:solid;
 /*  ...... IDs are for exact elements through the website 001 to 1000 ......*/
 #p001{ @extend %Regu_text;}
  #main001 {@extend %Regu_Textbox;}
- #head001 {@extend %Regu_Head;}
+ .h001 {@extend %Regu_Head;}
 
 #in_N_main  {
   @extend %input_F;
