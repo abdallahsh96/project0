@@ -25,6 +25,9 @@ $enable-responsive-font-sizes: "true";
   ol{
     font-size: 20px;
     background-color: white;
+    border-color: #555555;
+    border-style: solid;
+    border-width: medium;
 
   /*padding: 12px;*/
   padding-top: 10px;
@@ -48,7 +51,7 @@ background-color:white;
   width:50%;
   height:30%;
   text-align: center;
-  @media (max-width: 499px){ width:80%;}
+  @media (max-width: 650px){ width:80%;}
 }
 
 %Regu_text{
@@ -61,12 +64,12 @@ background-color:white;
   padding:20px;
   margin:30px;
   width:50%;
-  height:400px;
+  height: inherit;
 padding: 15px 32px;
   border-color: gray;
   border-style:solid;
   border-width: thick;
-  @media (max-width: 550px){
+  @media (max-width: 650px){
     width:80%;
   height: inherit;}
 }
@@ -96,13 +99,40 @@ padding: 15px 32px;
   margin: 10px;
   @media (max-width: 499px){margin: 10px;}
 }
+
+%Home_Button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px;
+  border-style: solid; border-width: medium;
+
+
+  @media (max-width: 499px){margin: 10px;}
+}
 #input_F{
   background-color: #263534;
 
   width: 100%;
   height: 15%;
-    @media (max-width: 499px){height: 10%;}
+    @media (max-width: 499px){height: 60%;}
 }
+
+%Regue_Open_input{
+  margin-left: 20px;
+padding-bottom: 20%;
+
+  height: 30%;
+  width: 50%;
+    @media (max-width: 650px){height: 10%;
+    width: 80%; }
+}
+
 %input_EE {
   /*margin:30px; */
   color:orange;
@@ -113,7 +143,7 @@ padding: 15px 32px;
 font-family: arial;
 font-size: 12px;
 font-style:normal;
-margin: 3px;
+margin-left:10px;
 border-color: #686868; /* light gray */
 border-style:solid;
 }
@@ -135,7 +165,8 @@ border-style:solid;
   :focus {  background-color: #696969; border-color: #686868; }
 }
 #in_P_main::placeholder{ color: orange;}
-
+.home_P { @extend %Home_Button;}
+.open_input{@extend %Regue_Open_input;}
 .next_P  { @extend %Regu_Button;}
 .login { @extend %Login_Button;}
 caption.table_Cap{

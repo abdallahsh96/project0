@@ -16,6 +16,9 @@ body {
 ol {
   font-size: 20px;
   background-color: white;
+  border-color: #555555;
+  border-style: solid;
+  border-width: medium;
   /*padding: 12px;*/
   padding-top: 10px;
   padding-bottom: 10px;
@@ -38,7 +41,7 @@ h1.h001 {
   width: 50%;
   height: 30%;
   text-align: center; }
-  @media (max-width: 499px) {
+  @media (max-width: 650px) {
     h1.h001 {
       width: 80%; } }
 
@@ -51,12 +54,12 @@ h1.h001 {
   padding: 20px;
   margin: 30px;
   width: 50%;
-  height: 400px;
+  height: inherit;
   padding: 15px 32px;
   border-color: gray;
   border-style: solid;
   border-width: thick; }
-  @media (max-width: 550px) {
+  @media (max-width: 650px) {
     #main001 {
       width: 80%;
       height: inherit; } }
@@ -91,13 +94,39 @@ h1.h001 {
     .login {
       margin: 10px; } }
 
+.home_P {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px;
+  border-style: solid;
+  border-width: medium; }
+  @media (max-width: 499px) {
+    .home_P {
+      margin: 10px; } }
+
 #input_F {
   background-color: #263534;
   width: 100%;
   height: 15%; }
   @media (max-width: 499px) {
     #input_F {
-      height: 10%; } }
+      height: 60%; } }
+
+.open_input {
+  margin-left: 20px;
+  padding-bottom: 20%;
+  height: 30%;
+  width: 50%; }
+  @media (max-width: 650px) {
+    .open_input {
+      height: 10%;
+      width: 80%; } }
 
 #in_N_main, #in_P_main {
   /*margin:30px; */
@@ -109,7 +138,7 @@ h1.h001 {
   font-family: arial;
   font-size: 12px;
   font-style: normal;
-  margin: 3px;
+  margin-left: 10px;
   border-color: #686868;
   /* light gray */
   border-style: solid; }
@@ -130,7 +159,6 @@ h1.h001 {
   color: orange; }
 
 caption.table_Cap {
-  font-style: italic;
   margin-left: 10px;
   /* for all  tables_caption*/ }
 
