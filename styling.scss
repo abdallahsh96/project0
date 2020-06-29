@@ -46,6 +46,7 @@ background-color:white;
 }
 %Regu_Head{
   background-color: $FavColor;
+  /* font-family: sans-serif; */
   padding: 15px 32px;
   margin:30px;
   width:50%;
@@ -103,13 +104,14 @@ padding: 15px 32px;
 %Home_Button{
   background-color: #4CAF50;
   border: none;
+  margin-left: 20px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 3px;
+  /*margin: 3px; */
   border-style: solid; border-width: medium;
 
 
