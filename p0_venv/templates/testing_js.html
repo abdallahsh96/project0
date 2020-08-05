@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function() {
+  document.querySelector('#login_Form').onsubmit = function() {
+      const name = document.querySelector('#name').value;
+      alert('Hello %s !', name );
+    };
+});
+ </script>
+
+<title>Testing Java</title>
+</head>
+
+<body>
+  <h1 class="h001"> Login </h1>
+
+      <!-- <form id="login_Form">
+     <input id="in_N_main" name="name" type="text"
+      placeholder="Enter your name">
+     <button type="submit"> Submite <button>
+   </form> -->
+
+   <form id="form">
+             <input id="name" autocomplete="off" autofocus placeholder="Name" type="text">
+             <input type="submit">
+         </form>
+
+
+</body>
+</html>
