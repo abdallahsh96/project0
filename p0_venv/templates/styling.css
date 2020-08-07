@@ -34,7 +34,7 @@ ol ul li {
   font-size: 20px;
   background-color: white; }
 
-h1.h001 {
+h1.h001, h2 {
   background-color: #0CDADD;
   /* font-family: sans-serif; */
   padding: 15px 32px;
@@ -43,7 +43,7 @@ h1.h001 {
   height: 30%;
   text-align: center; }
   @media (max-width: 650px) {
-    h1.h001 {
+    h1.h001, h2 {
       width: 80%; } }
 
 #p001 {
