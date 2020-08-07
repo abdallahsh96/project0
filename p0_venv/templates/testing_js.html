@@ -6,9 +6,9 @@
 
 <script>
 document.addEventListener('DOMContentLoaded',function() {
-  document.querySelector('#login_Form').onsubmit = function() {
+  document.querySelector('#form').onsubmit = function() {
       const name = document.querySelector('#name').value;
-      alert('Hello %s !', name );
+      alert('Hello ' + name + ' !' );
     };
 });
  </script>

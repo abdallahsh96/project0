@@ -13,10 +13,19 @@
 
       <!-- .....cooooooooooooooooooooddddddddddddddeeeeeeeeeeeee..... -->
 
-      {% block heading%}
-      Starter Page
-      {% endblock %}
+      <script>
+      document.addEventListener('DOMContentLoaded',function() {
+        document.querySelector('#login_form').onsubmit = function() {
+            const name = document.querySelector('#in_N_main').value;
+            alert('Hello ' + name + ' !' );
+          };
+      });
+       </script>
 
+
+      <head>
+        <title> home page </title>
+      </head>
 
 
 
@@ -28,27 +37,29 @@
   <br />
 -->
   <div id="input_F">
-    <ul class="list-inline">
 
-      <li class="list-inline-item">
 
-         <form action="{{ url_for('hello') }}" method="post">
-           <input id="in_N_main"   name="name";
-            type="text"; placeholder="your name">
+
+
+ <form id="login_form">
+
+            <ul class="list-inline">
+            <li class="list-inline-item">
+      <input id="in_N_main" autocomplete="off"
+                   autofocus placeholder="your name" type="text">
             </li>
-           <li class="list-inline-item">
-          <button> Login </button>
-          </form>
 
-          </li>
 
-      <!--  <li class="list-inline-item">
-         <input id="in_P_main"  name="name";
-          type= "password"; placeholder= "password">
-        </li>
+            <li class="list-inline-item">
+      <input id="in_P_main"  name="password";
+          type= "password"; autofocus placeholder= "password">
+            </li>
 
-      <li class="list-inline-item">
-      -->
+            <li class="list-inline-item">
+      <button class="login" type="submit"> Login </button>
+            </li>
+  </form>
+
 
 
 
